@@ -1,0 +1,42 @@
+# Defaults
+folder
+file
+
+# Office
+doc docx
+xls xlsx
+ppt pptx
+pdf
+
+# Image & Multimedia
+img bmp jpg jpeg gif png
+psd
+mp4 mov avi mkv rmvb flv f4v
+mp3 m4a flac wav ape
+
+# archive
+rar zip
+7z
+iso
+
+# Text
+chm
+html htm
+txt
+reg
+ini inf
+
+# Coding
+h
+c
+cpp
+js
+lib
+sys
+
+# Fonts
+ttf
+
+# Torrent
+torrent
+

@@ -1,0 +1,279 @@
+html, body, p, form, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.MenuNav ul, .MenuNav li {
+	list-style: none;
+}
+
+a {
+	color: #00c;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/* Top Navi bar */
+#global-nav {
+	height: 20px;
+	line-height: 20px;
+	border-bottom: 1px solid #ddd;
+	display: block;
+}
+
+/* Right Navi menu */
+.MenuNav {
+	float: right;
+}
+
+.MenuNav li {
+	float: left;
+	padding: 0 4px 0 4px;
+	position: relative;
+	vertical-align: text-bottom;
+}
+
+/* Sub navi menu */
+.MenuNav li:hover .MenuItem {
+	visibility: visible;
+}
+
+.MenuItem {
+	visibility: hidden;
+	border: 1px solid #888;
+	top: 18px;
+	right: 1px;
+	position: absolute;
+	box-shadow: 1px 1px 2px #ccc;
+	filter:
+		progid:DXImageTransform.Microsoft.Shadow(Strength=2,Direction=135,Color="#cccccc")
+}
+
+.MenuItem li {
+	float: none;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: bottom; /* IE 6~7 Hack */
+	background: #fff;
+	text-indent: 8px;
+	width: 100px;
+	text-align: left;
+}
+
+.MenuItem li:hover {
+	background: #eee;
+}
+
+.MenuItem li a {
+	text-decoration: none;
+	display: block;
+}
+
+.MenuItem .split {
+	border-top: 1px solid #ccc;
+}
+
+/* Small blue triangle */
+.icon-triangle-down-blue {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-position: 0px 0px;
+	background: url(icon.png) no-repeat 0 0;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.boxLeftBorder {
+	background: url(icon.png) no-repeat -14px 0px;
+	width: 11px;
+	height: 35px;
+	padding: 0;
+}
+
+/* Search box */
+#searchDiv {
+	padding-top: 40px;
+}
+.boxMiddleBorder {
+	background: url(search_2.png) repeat-x 0 0;
+	width: 450px;
+	height: 35px;
+}
+
+.boxRightBorder {
+	background: url(icon.png) no-repeat -31px 0px;
+	width: 107px;
+	height: 35px;
+}
+
+.boxRightBorder button {
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	filter: alpha(opacity=0);
+}
+
+.boxRightBorder:hover {
+	background-position: -143px 0px;
+}
+
+.boxRightBorder:active {
+	background-position: -255px 0px;
+}
+
+.searchText {
+	border: 1px none;
+	outline: 0;
+	width: 100%;
+}
+
+#searchDiv {
+	text-align: center;
+	width: 700px;
+	margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+#searchResultDiv {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+#searchForm table {
+	margin: 0 auto;
+}
+
+/* Footer */
+html, body {
+	height: 100%
+}
+
+body {
+	font: 12px arial;
+	position: relative;
+}
+
+#wrapper {
+	position: relative;
+	min-height: 100%;
+}
+
+#content {
+	padding: 5px;
+	padding-bottom: 80px;
+}
+
+#footDiv {
+	height: 50px;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 0;
+	overflow: hidden;
+	border-top: 1px solid #aaa;
+}
+
+#footDivCon {
+	padding-top: 10px;
+	width: 700px;
+	margin: 0 auto;
+}
+
+#spaceholder {
+	height: 60px;
+}
+
+#footDivCon p, #footDivCon a{
+	color: #666;
+}
+/* End of Footer */
+
+
+/* Search Result */
+#searchResultHeader, #searchResult {
+	margin: 0 auto;
+	width: 95%;
+	padding: 2px;
+}
+
+
+#searchResultTable {
+    min-width: 700px;
+    width: 100%;
+}
+
+#searchResultTable .size, #searchResultTable .date {
+    text-align: center;
+}
+
+#searchResultTable .size {
+    width: 10%;
+}
+
+#searchResultTable .date {
+    width: 20%;
+}
+
+#searchResultTable thead {
+    background-color: #dce2ee;
+    line-height: 30px;
+    text-align: center;
+}
+
+#searchResultTable td {
+    padding: 4px 5px;
+}
+
+#searchResultTable tr td {
+    border-bottom: 1px solid #ccc;
+}
+
+#searchResultTable tbody tr:hover {
+    background: #eee;
+}
+
+#paging {
+	padding: 5px 0 0 0;
+}
+
+#paging a, #paging strong{
+	display: inline-block;
+	vertical-align: text-bottom;
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+#paging .pc {
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	display: block;
+	text-align: center;
+}
+
+#paging .text {
+	width: 60px;
+}
+
+#paging a:hover {
+	background: #ebebeb;
+}
+
+#paging strong .pc {
+	border: 0;
+}
+
+#paging a .pc {
+	border: 1px solid #e7ecf0;
+}

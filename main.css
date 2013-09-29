@@ -207,10 +207,13 @@ body {
 	padding: 2px;
 }
 
-
 #searchResultTable {
     min-width: 700px;
     width: 100%;
+}
+
+#searchResultTable .file {
+	display: block;
 }
 
 #searchResultTable .size, #searchResultTable .date {

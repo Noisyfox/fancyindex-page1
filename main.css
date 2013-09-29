@@ -231,8 +231,8 @@ body {
     text-align: center;
 }
 
-#searchResultTable td {
-    padding: 4px 5px;
+#searchResultTable .size, #searchResultTable .date {
+    padding: 4px 0;
 }
 
 #searchResultTable tr td {

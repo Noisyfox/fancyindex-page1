@@ -60,7 +60,7 @@ for i in resl:
 
 .typeiconTableCol {
 	width: %dpx;
-    padding: 2px;
+    padding: 3px;
 }
 """%(i, i, i, i))
     f.write(buf)

@@ -29,6 +29,10 @@ a {
 	display: block;
 }
 
+.LeftNavNews {
+	float: left;
+}
+
 /* Right Navi menu */
 .MenuNav {
 	float: right;

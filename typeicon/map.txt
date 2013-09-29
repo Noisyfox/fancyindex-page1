@@ -11,7 +11,7 @@ pdf
 # Image & Multimedia
 img bmp jpg jpeg gif png
 psd
-mp4 mov avi mkv rmvb flv f4v
+mp4 mov avi mkv rmvb flv f4v mpg
 mp3 m4a flac wav ape
 
 # archive

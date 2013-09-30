@@ -4,15 +4,18 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>计算中心 FTP 搜索</title>
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="typeicon/typeicon-32.css" />
 	<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="typeicon/typeicon-32.css" />
 	<script type="text/javascript" src="typeicon/typeicon.js"></script>
 </head>
 <body>
 <div id="wrapper">
     <div id="content">
         <div id="global-nav">
+        	<div class="LeftNavNews">
+        		<!-- News go here -->
+        	</div>
             <ul class="MenuNav">
                 <li id="ftplink" class="dropdown">
                     <a>
@@ -46,16 +49,19 @@
                         <td class="boxMiddleBorder">
                             <input type="text" class="searchText" name="keyword" placeholder="搜点什么？"/>
                         </td>
-                        <td class="boxRightBorder">
-                            <button class="boxRightSearchButton" type="submit">
-                                <strong>搜索</strong>
-                            </button>
+                        <td class="boxRightBorder" onclick="submit();">
                         </td>
                     </tr>
                     </tbody>
                 </table>
             </form>
         </div>
+
+        <!-- Begin Search Result -->
+        <div id="searchResultDiv">
+        </div>
+        <!-- End Search Result -->
+
         <div id="spaceholder"></div>
     </div>
 

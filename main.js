@@ -47,7 +47,7 @@ $(document).ready(function() {
         console.log("CSS3 patch bypassed");
     }
 	
-	if ($("#searchResultDiv").length != 0) {
+	if ($("#searchResultTable").length != 0) {
 		$("#lg").hide();
 	}
 	

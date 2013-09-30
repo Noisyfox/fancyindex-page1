@@ -104,9 +104,6 @@ a {
 }
 
 /* Search box */
-#searchDiv {
-	padding-top: 40px;
-}
 .boxMiddleBorder {
 	background: url(search_2.png) repeat-x 0 0;
 	width: 450px;
@@ -141,9 +138,10 @@ a {
 }
 
 #searchDiv {
+	width: 572px;
 	text-align: center;
-	width: 700px;
 	margin: 0 auto;
+	padding-top: 40px;
     padding-bottom: 20px;
 }
 
@@ -154,6 +152,23 @@ a {
 
 #searchForm table {
 	margin: 0 auto;
+}
+
+.hotword {
+	text-align: left;
+	color: #999999;
+	padding-top: 2px;
+	padding-left: 5px;
+}
+
+.hotword a{
+	text-decoration: none;
+	color: #999999;
+	padding-left: 5px;
+}
+
+.hotword a:hover{
+	text-decoration: underline;
 }
 
 /* Footer */

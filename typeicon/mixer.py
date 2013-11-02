@@ -38,17 +38,21 @@ for i in open('map.txt', 'r'):
     
 icon_count = len(d.keys())
 icon_max = max(resl)
+try:
+    os.mkdir('typeicon')
+except:
+    pass
 for r in resl:
     i = Image.new('RGBA', (icon_count * icon_max, icon_max))
     for index, k in enumerate(d):
         i.paste(d[k]['res'][r], (icon_max * index, 0))
-    i.save('typeicon-%d.png'%(r))
+    i.save('typeicon/typeicon-%d.png'%(r))
 
 buf = ''
 for index, i in enumerate(d):
     buf += '.ti-%s {background-position: -%dpx 0px;}\n'%(i, index * icon_max)
 for i in resl:
-    f = open('typeicon-%d.css'%(i), 'wb')
+    f = open('typeicon/typeicon-%d.css'%(i), 'wb')
     f.write(""".typeicon {
 	display: inline-block;
 	width: %dpx;
@@ -60,13 +64,13 @@ for i in resl:
 
 .typeiconTableCol {
 	width: %dpx;
-    padding: 3px;
+	padding: 3px;
 }
 """%(i, i, i, i))
     f.write(buf)
     f.close()
 
-f = open('typeicon.js', 'wb')
+f = open('typeicon/typeicon.js', 'wb')
 f.write('typeicon_map = {\n')
 for ti in d:
     for etc in d[ti]['etc']:

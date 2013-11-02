@@ -8,6 +8,10 @@ table {
 	border-collapse: collapse;
 }
 
+img {
+    border: 0;
+}
+ 
 .MenuNav ul, .MenuNav li {
 	list-style: none;
 }
@@ -142,15 +146,12 @@ a {
 	text-align: center;
 	margin: 0 auto;
 	padding-top: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 #searchResultDiv {
 	max-width: 1000px;
-	margin-top: 10px;
-	margin-bottom: 0px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 
 #searchForm table {
@@ -310,6 +311,10 @@ body {
 	text-align: center;
 }
 
+#indexInfoDiv div{
+	margin-top:20px;
+}
+
 #browseFiles a{
 	color: #4B81C1;
 	font-size: x-large;
@@ -318,5 +323,59 @@ body {
 
 #browseFiles a:hover{
 	text-decoration: underline;
+}
+
+#fileChanges{
+	min-width: 572px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#fileChangesTable{
+	width:100%
+}
+
+#fileChangesTable td{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#fileChangesTable table{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+	width:100%
+}
+
+#fileChangesTable table thead{
+	background-color:#dce2ee;
+}
+
+#fileChangesTable table tbody{
+	text-align: left;	
+}
+
+#fileChangesTable table tbody tr:hover {
+    background: #eee;
+}
+
+#fileChangesTable table a{
+	text-decoration: none;
+	color: #4B81C1;
+	padding-left: 5px;
+}
+
+#fileChangesTable table a:hover{
+	text-decoration: underline;
+}
+
+.newFileTime{
+	width:80px;
+	text-align:center
+}
+
+.newFileName a{
+	display:block;
 }
 /* End of Index Information*/

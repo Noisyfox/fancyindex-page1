@@ -68,7 +68,7 @@ $(document).ready(function() {
     if ($("#searchResultTable").length != 0) {
         $("#lg").hide();
     } else {
-    	$("#keyword").focus();
+    	$("#keyword").select();
     }
     
     // Copy parameter keyword to the input box

@@ -40,3 +40,5 @@ ttf
 # Torrent
 torrent
 
+# Binary
+exe

@@ -12,10 +12,6 @@ table {
 	list-style: none;
 }
 
-a {
-	color: #00c;
-}
-
 ::selection {
 	background: #b3d4fc;
 	text-shadow: none;
@@ -38,6 +34,14 @@ a {
 	float: right;
 }
 
+.MenuNav * {
+	transition: color linear 0.1s,background-color linear 0.1s;
+}
+
+.MenuNav a {
+	color: #537cc4;
+}
+
 .MenuNav li {
 	float: left;
 	padding: 0 4px 0 4px;
@@ -52,7 +56,7 @@ a {
 
 .MenuItem {
 	visibility: hidden;
-	border: 1px solid #888;
+	border: 1px solid #bbb;
 	top: 18px;
 	right: 1px;
 	position: absolute;
@@ -63,11 +67,12 @@ a {
 
 .MenuItem li {
 	float: none;
-	height: 25px;
-	line-height: 25px;
+	/*height: 25px;
+	line-height: 25px;*/
 	vertical-align: bottom; /* IE 6~7 Hack */
 	background: #fff;
-	text-indent: 8px;
+	padding: 0;
+	/*text-indent: 8px;*/
 	width: 100px;
 	text-align: left;
 }
@@ -79,10 +84,11 @@ a {
 .MenuItem li a {
 	text-decoration: none;
 	display: block;
+	padding: 3px 6px 4px;
 }
 
 .MenuItem .split {
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #ebebeb
 }
 
 /* Small blue triangle */
@@ -117,13 +123,6 @@ a {
 	background: url(icon.png) no-repeat -31px 0px;
 	width: 107px;
 	height: 35px;
-}
-
-.boxRightBorder button {
-	opacity: 0;
-	width: 100%;
-	height: 100%;
-	filter: alpha(opacity=0);
 }
 
 .boxRightBorder:hover {
@@ -248,6 +247,14 @@ body {
 
 #searchResultTable tbody tr:hover {
     background: #eee;
+}
+
+#searchResultTable a {
+	text-decoration: none;
+}
+
+#searchResultTable a:hover {
+	text-decoration: underline;
 }
 
 #paging {

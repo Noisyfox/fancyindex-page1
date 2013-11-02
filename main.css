@@ -107,7 +107,7 @@ img {
 }
 
 .boxLeftBorder {
-	background: url(icon.png) no-repeat -14px 0px;
+	background: url(icon.png) no-repeat -14px 0;
 	width: 11px;
 	height: 35px;
 	padding: 0;
@@ -121,17 +121,17 @@ img {
 }
 
 .boxRightBorder {
-	background: url(icon.png) no-repeat -31px 0px;
+	background: url(icon.png) no-repeat -31px 0;
 	width: 107px;
 	height: 35px;
 }
 
 .boxRightBorder:hover {
-	background-position: -143px 0px;
+	background-position: -143px 0;
 }
 
 .boxRightBorder:active {
-	background-position: -255px 0px;
+	background-position: -255px 0;
 }
 
 .searchText {
@@ -190,8 +190,7 @@ body {
 }
 
 #content {
-	padding: 5px;
-	padding-bottom: 80px;
+	padding: 5px 5px 80px;
 }
 
 #footDiv {
